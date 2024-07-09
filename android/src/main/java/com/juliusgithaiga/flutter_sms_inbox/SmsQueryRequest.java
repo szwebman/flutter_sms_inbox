@@ -9,11 +9,11 @@ public enum SmsQueryRequest {
 
     Uri toUri() {
         if (this == Inbox) {
-            return Uri.parse("content://sms/inbox");
+            return Uri.parse("content://mms/inbox");
         } else if (this == Sent) {
-            return Uri.parse("content://sms/sent");
+            return Uri.parse("content://mms/sent");
         } else {
-            return Uri.parse("content://sms/draft");
+            return Uri.parse("content://mms/draft");
         }
     }
 }
